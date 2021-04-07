@@ -2,7 +2,7 @@
 A simple app that allows the user to deposit money, withdraw money and can print out a bankstatement to an account, used in irb.
 
 ## Planning
-#### User Stories
+### User Stories
 ##### User Story 1
 ```
 As a client,
@@ -21,7 +21,7 @@ As a client,
 So that I can see how much money I have saved,
 I would like to be able to print my bank statement
 ```
-#### Domain Model
+### Objects and Messages
 ##### User Story 1
 ```
 +---------+-------------+
@@ -50,7 +50,7 @@ I would like to be able to print my bank statement
 +-----------+------------+
 ```
 
-#### Sequence Diagram
+### Sequence Diagram
 
 ## Specification
 
