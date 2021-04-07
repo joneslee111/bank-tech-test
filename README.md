@@ -3,10 +3,54 @@ A simple app that allows the user to deposit money, withdraw money and can print
 
 ## Planning
 #### User Stories
+##### User Story 1
+```
+As a client,
+So that I can save money,
+I would like to be able to deposit into my account
+```
+##### User Story 2
+```
+As a client,
+So that I can spend my money,
+I would like to be able to withdraw from my account
+```
+##### User Story 3
+```
+As a client,
+So that I can see how much money I have saved,
+I would like to be able to print my bank statement
+```
+#### Domain Model
+##### User Story 1
+```
++---------+-------------+
+| Objects |   Messages  |
++---------+-------------+
+| User    |             |
+| Account | .deposit()  |
++---------+-------------+
+```
+##### User Story 2
+```
++---------+-------------+
+| Objects |   Messages  |
++---------+-------------+
+| User    |             |
+| Account | .withdraw() |
++---------+-------------+
+```
+##### User Story 3
+```
++-----------+------------+
+| Objects   |  Messages  |
++-----------+------------+
+| User      |            |
+| Statement | .print     |
++-----------+------------+
+```
 
-#### Tables
-
-#### Diagrams
+#### Sequence Diagram
 
 ## Specification
 
