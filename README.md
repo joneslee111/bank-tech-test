@@ -51,6 +51,7 @@ I would like to be able to print my bank statement
 ```
 
 ### Sequence Diagram
+![Screenshot 2021-04-07 at 17 38 32](https://user-images.githubusercontent.com/21693444/113902845-3d24b000-97c8-11eb-86b9-b099da56bd62.png)
 
 ## Specification
 
