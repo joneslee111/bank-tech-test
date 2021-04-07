@@ -1,5 +1,5 @@
 # Bank Tech Test
-A simple app that allows the user to deposit money, withdraw money and can print out a bankstatement to an account, used in irb.
+A simple app that allows the user to deposit money, withdraw money and can print out a bank statement of an account, used in irb.
 
 ## Planning
 ### User Stories
