@@ -1,6 +1,50 @@
 # Bank Tech Test
 A simple app that allows the user to deposit money, withdraw money and can print out a bank statement of an account, used in irb.
 
+## Installation
++ Clone into local repository:
+```
+git clone https://github.com/joneslee111/bank-tech-test.git
+```
++ Go to the project folder:
+```
+cd bank-tech-test
+```
++ Install the dependencies:
+```
+bundle install
+```
+## Running The Program
+```
+irb -r './lib/account.rb'
+```
++ To create a new account:
+```
+account = Account.new
+```
++ To deposit into the account:
+```
+account.deposit(325)
+```
++ To withdraw:
+```
+account.withdraw(200)
+```
++ To view bank statement:
+```
+account.bank_statement
+```
+### Example
+<img width="983" alt="Screenshot 2021-04-08 at 15 08 36" src="https://user-images.githubusercontent.com/21693444/114041611-98b07580-987c-11eb-9348-6ead591db1cb.png">
+
+## Running The Tests
++ Whilst in the project directory:
+```
+rspec
+```
+### Example
+<img width="983" alt="Screenshot 2021-04-08 at 15 24 05" src="https://user-images.githubusercontent.com/21693444/114043745-7881b600-987e-11eb-9a69-ce70dd70636f.png">
+
 ## Planning
 ### User Stories
 ##### User Story 1
