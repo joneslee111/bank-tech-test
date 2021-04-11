@@ -5,10 +5,9 @@ require_relative 'statement'
 class Account
   attr_reader :balance, :statement, :transactions
 
-  def initialize(statement = Statement.new)
-    @balance = 0
+  def initialize(balance = 0, statement = Statement.new)
+    @balance = balance
     @transactions = []
-    @time = Time.new
     @statement = statement
   end
 
@@ -17,7 +16,7 @@ class Account
       raise 'You a broke boy, go earn some cheddar'
     else
       @balance -= amount
-      new_transaction = "#{@time.strftime('%d/%m/%y')}  || #{'%.2f' % amount}    || nil      || #{format('%.2f',
+      new_transaction = "#{current_date}  || #{'%.2f' % amount}    || nil      || #{format('%.2f',
                                                                                                          @balance)}"
       @transactions.push(new_transaction)
     end
@@ -25,7 +24,7 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    new_transaction = "#{@time.strftime('%d/%m/%y')}  || nil      || #{'%.2f' % amount}   || #{format('%.2f',
+    new_transaction = "#{current_date}  || nil      || #{'%.2f' % amount}   || #{format('%.2f',
                                                                                                       @balance)}"
     @transactions.push(new_transaction)
   end
@@ -33,5 +32,9 @@ class Account
   def bank_statement
     @statement.print_statement(@transactions)
   end
+
+  def current_date
+    time = Time.new.strftime('%d/%m/%y')
+  end 
 
 end
